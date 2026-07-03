@@ -14,6 +14,18 @@
         grid-template-columns: repeat(auto-fit, minmax(280px, 320px)) !important;
         justify-content: center !important;
       }
+      /* Center the text content of the about and contact sections
+         (the global stylesheet only centers the h2 headings). */
+      .about .container,
+      .contact .container {
+        text-align: center;
+      }
+      /* Center testimonial cards when they don't fill the row;
+         "safe center" keeps them reachable if they overflow into scroll. */
+      .testimonials .container > div[style] {
+        justify-content: center !important;
+        justify-content: safe center !important;
+      }
     </style>
   </head>
   <body>
